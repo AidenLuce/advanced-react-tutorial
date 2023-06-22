@@ -14,6 +14,12 @@ const CleanupFunction = () => {
 const RandomComp = () => {
   useEffect(()=>{
     console.log('hmm this is interesting')
+      const id = setInterval(()=>{
+          console.log('hello from interval')
+      },1000)
+      return () => {
+        clearInterval(id)
+      }
   },[])
   return <h1>Hello there</h1>
 }
