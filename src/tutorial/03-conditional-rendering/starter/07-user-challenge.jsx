@@ -1,27 +1,27 @@
 import {useState} from "react";
 
 const UserChallenge = () => {
-  const [user, setUser] = useState(null)
+  const [lang, setLang] = useState(true)
 
-  const login = () => {
+  const english = () => {
     // normally connect to db or api
-    setUser({name: 'Aiden'})
+    setLang(true)
   }
-  const logout = () => {
-    setUser(null)
+  const spanish = () => {
+    setLang(false)
   }
 
   return (
     <div>
-      {user?
+      {lang?
           <div>
-            <h4>Hello there {user.name}</h4>
-            <button className='btn' onClick={logout}>Logout</button>
+            <h4>Hello, My name is Aiden Luce</h4>
+            <button className='btn' onClick={spanish}>Espanol</button>
           </div>
       :
           <div>
-            <h4>Please login</h4>
-            <button className='btn' onClick={login}>Login</button>
+            <h4>Hola, me llamo Aiden Luce</h4>
+            <button className='btn' onClick={english}>English</button>
           </div>
       }
     </div>
