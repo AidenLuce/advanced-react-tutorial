@@ -1,9 +1,11 @@
-import Starter from './tutorial/02-useEffect/starter/05-cleanup-function.jsx'
+import List from './tutorial/05-leverage-javascript/starter/List.jsx'
 
 function App() {
   return (
     <div className='container'>
-      <Starter/>
+      {/*<Starter/>*/}
+        <h2>LEVERAGE JAVASCRIPT</h2>
+        <List/>
     </div>
   );
 }
