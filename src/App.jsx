@@ -1,10 +1,10 @@
-import Starter from './ProjectTests/APITests/Yodish.jsx'
+import List from './tutorial/05-leverage-javascript/starter/List.jsx'
 
 function App() {
   return (
     <div className='container'>
       {/*<Starter/>*/}
-        <Starter/>
+        <List/>
     </div>
   );
 }

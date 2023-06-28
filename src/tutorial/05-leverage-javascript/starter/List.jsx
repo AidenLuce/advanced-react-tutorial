@@ -1,12 +1,11 @@
 import {people} from "../../../data.js";
+import {Person} from "./Person";
 
 const List = () =>{
     return(
         <div>
             {people.map((person)=>{
-                return(
-                    <div>{person.name}</div>
-                )
+                return <Person key={person.name} {...person}/>
             })}
         </div>
     )
